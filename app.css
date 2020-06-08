@@ -79,3 +79,62 @@ time, mark, audio, video {
     color: rgb(128, 128, 0); 
     mix-blend-mode: difference;
 }
+
+.view-content{
+    display: flex;
+    height: 100%;
+}
+
+.view {
+    flex-grow: 1;
+    opacity: 1;
+    background-color:blue;
+    color: white;
+    font-weight: bolder;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+.in-from-left > div {
+    animation-name: slidein;
+}
+
+.in-from-right {
+    justify-content: flex-end;
+}
+
+.in-from-right > div {
+    animation-name: slidein;
+}
+
+.out-to-right {
+    justify-content: flex-end;
+}
+
+.out-to-right > div {
+    animation-name: slideout;
+}
+
+.out-to-left > div {
+    animation-name: slideout;
+}
+
+@keyframes slidein {
+    from {
+        flex-grow: 0;
+    }
+  
+    to {
+        flex-grow: 1;
+    }
+}
+
+@keyframes slideout {
+    from {
+        flex-grow: 1;
+    }
+  
+    to {
+        flex-grow: 0;
+    }
+}
