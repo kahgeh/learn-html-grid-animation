@@ -44,3 +44,33 @@ time, mark, audio, video {
     grid-area: 12/1/8/13;
     background-color: gray;
 }
+
+.control {
+    z-index: 1;
+}
+
+.control.side-handle {
+    opacity: 0;
+}
+
+.side-handle.left{
+    grid-area: 4/1/5/1;
+    opacity: 0;
+}
+
+.side-handle.right{
+    grid-area: 4/12/4/12;
+    opacity: 0;
+}
+
+.side-handle:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition:  opacity 1s ease ;
+    opacity: 1;
+    cursor: pointer; 
+    color: rgb(128, 128, 0); 
+    mix-blend-mode: difference;
+}
