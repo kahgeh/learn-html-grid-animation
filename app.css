@@ -30,7 +30,7 @@ time, mark, audio, video {
 
 .header {
     grid-area: 1/1/8/13;
-    background-color: aqua;
+    background-color: gray;
 }
 
 .main-content {
@@ -41,5 +41,5 @@ time, mark, audio, video {
 
 .footer {
     height: 2em;
-    grid-area: 12/1/8/12;
+    background-color: gray;
 }
