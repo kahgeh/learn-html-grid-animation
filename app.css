@@ -18,3 +18,28 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+.page {
+    display: grid;
+    grid-template-columns: 2em repeat(10,1fr) 2em;
+    grid-template-rows: 2em repeat(6,1fr) 2em;
+    background-color: beige;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    grid-area: 1/1/8/13;
+    background-color: aqua;
+}
+
+.main-content {
+    grid-area: 2/1/8/13;
+    background-color: lightgrey;
+    z-index: 0;
+}
+
+.footer {
+    height: 2em;
+    grid-area: 12/1/8/12;
+}
