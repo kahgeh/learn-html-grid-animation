@@ -19,6 +19,11 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+:root{
+    --main-bg-lightness: 90%;
+    --main-content-bg-color: hsl(60, 70%, var(--main-bg-lightness)); 
+}
+
 .page {
     display: grid;
     grid-template-columns: 2em repeat(10,1fr) 2em;
@@ -35,7 +40,7 @@ time, mark, audio, video {
 
 .main-content {
     grid-area: 2/1/8/13;
-    background-color: lightgrey;
+    background-color: var(--main-content-bg-color);
     z-index: 0;
 }
 
