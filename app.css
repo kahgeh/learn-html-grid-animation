@@ -59,12 +59,12 @@ time, mark, audio, video {
 }
 
 .side-handle.left{
-    grid-area: 4/1/5/1;
+    grid-area: 4/1/6/1;
     opacity: 0;
 }
 
 .side-handle.right{
-    grid-area: 4/12/4/12;
+    grid-area: 4/12/6/12;
     opacity: 0;
 }
 
